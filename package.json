@@ -1,0 +1,23 @@
+{
+  "name": "keypom-integration",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PiparHQ/keypom-integration.git"
+  },
+  "author": "Pipar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PiparHQ/keypom-integration/issues"
+  },
+  "homepage": "https://github.com/PiparHQ/keypom-integration#readme",
+  "dependencies": {
+    "keypom-js": "^1.4.9",
+    "near-api-js": "^2.1.1"
+  }
+}
