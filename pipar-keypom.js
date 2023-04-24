@@ -40,17 +40,21 @@ async function createPiparDrop() {
         account: fundingAccount,
         numKeys: 1,
         config: {
-            usesPerKey: 2
+            usesPerKey: 10
         },
         depositPerUseNEAR: "22",
         fcData: {
             methods: [
                 [{
-                    receiverId: "pipar-alpha-v19.testnet",
+                    receiverId: "pipar-alpha-v23.testnet",
                     methodName: "new_store",
-                    args: JSON.stringify({}),
+                    args: JSON.stringify({
+                        "metadata": {
+                            "receiver_id": ""
+                        }
+                    }),
                     attachedDeposit: parseNearAmount("21"),
-                    userArgsRule: "UserPreferred"
+                    accountIdField: "metadata.receiver_id"
                 }]
             ]
         },
@@ -70,8 +74,8 @@ async function createPiparDrop() {
         })
         dropInfo[pubKeys[i]] = linkdropUrl;
     }
-    // Write file of all pk's and their respective linkdrops
-    console.log('Public Keys and Linkdrops: ', dropInfo)
+
+    console.log('Pipar public Keys and Linkdrops: ', dropInfo)
     console.log(`Keypom Contract Explorer Link: explorer.${NETWORK_ID}.near.org/accounts/${KEYPOM_CONTRACT}.com`)
 
 
