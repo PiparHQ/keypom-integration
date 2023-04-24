@@ -2,6 +2,9 @@
 
 Pipar is an escrow marketplace for buying and selling of goods without the need for the buyer to trust the seller or the seller needing to trust the buyer to pay for the product when shipped. To generate a successful transaction on pipar, the buyer must first prove that he/she has the funds to purchase the product by locking the funds in the pipar smart contract. Then the seller goes ahead to deliver the product, which after the buyer approves the transaction.
 
+## Watch video of Pipar keypom feature in action
+[Watch Here](https://www.loom.com/share/0635bfdff03b4ea9a51d4c5104eb7f69)
+
 ### What Problem Is Pipar Solving?
 To understand the problem pipar is aiming to solve, you must understand what it feels like to live in a Low Trust Society(most found in developing economies). Businesses struggle to ship out products to customers far from where they reside because most of the customers won’t actually buy the product, they cancel last minute leaving the seller to cover the shipping cost.
 For buyers, it is the fact that majority of the sellers won’t deliver the promised product but rather a counterfeit or they won’t deliver at all scamming the buyer. Since cost of litigation is high and stressful, buyer’s wont want to take such risk to their own detriment.
