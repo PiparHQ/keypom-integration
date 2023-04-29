@@ -12,7 +12,7 @@ const {
 } = keypom;
 
 // Input the account that will be the funder of the drops
-const FUNDER_ACCOUNT_ID = "pipar-alpha-v27.testnet";
+const FUNDER_ACCOUNT_ID = "pipar-alpha-rust-v3.testnet";
 // Pass in the network Id Testnet or Mainnet
 const NETWORK_ID = "testnet";
 
@@ -48,23 +48,18 @@ async function createPiparDrop() {
         account: fundingAccount,
         numKeys: 1,
         config: {
-            usesPerKey: 10,
-            // dropRoot: "pipar-alpha-v26.testnet"
+            usesPerKey: 20,
+            dropRoot: "pipar-alpha-rust-v3.testnet"
         },
-        depositPerUseNEAR: "3",
+        depositPerUseNEAR: "11",
         fcData: {
             methods: [
                 [{
-                    receiverId: "pipar-alpha-v27.testnet",
-                    methodName: "new_store_keypom",
-                    args: JSON.stringify({
-                        "metadata": {
-                            "receiver_id": ""
-                        }
-                    }),
-                    attachedDeposit: parseNearAmount("1"),
-                    accountIdField: "metadata.receiver_id",
-                    successUrl: "https://www.pipar.xyz/"
+                    receiverId: "pipar-alpha-rust-v3.testnet",
+                    methodName: "get_store_cost",
+                    args: JSON.stringify({}),
+                    attachedDeposit: parseNearAmount("0"),
+                    // successUrl: "https://www.pipar.xyz/"
                 }]
             ]
         },
